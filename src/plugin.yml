@@ -1,0 +1,18 @@
+name: LevelIt
+main: net.erbros.levelit.LevelIt
+version: 0.0.1
+author: Erbros
+website: www.erbros.net
+commands:
+  levelit:
+    description: Information regarding usage of LevelIt.
+    usage: /<command>
+    aliases: []
+permissions:
+    levelit.*:
+        description: Full access to all LevelIt features.
+        children:
+            levelit.use: true
+    levelit.use:
+      description: Ability to use the commands
+      default: false
